@@ -1,5 +1,4 @@
 // JavaScript Document
-
 var cards = document.querySelectorAll('.memory-card');
 
 var hasFlippedCard = false;
@@ -58,3 +57,4 @@ function shuffle() {
 }();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+cards.forEach(card => card.addEventListener('touchstart', flipCard));
