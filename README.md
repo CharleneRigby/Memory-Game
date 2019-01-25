@@ -4,10 +4,7 @@
 > ## How to play
 > The memory game is a basic matching game to test the player's memory. In a deck of paired cards, the player needs to match each pair to win the game.
 
-
-> ![Memory Find](https://github.com/CharleneRigby/Memory-Game/blob/master/assets/vid/card-select.gif)
-> ![Memory Match](https://github.com/CharleneRigby/Memory-Game/blob/master/assets/vid/card-match.gif)
-
+![Star Wars Memory Game](https://github.com/CharleneRigby/Memory-Game/blob/master/assets/img/Star-Wars-Memory-Game.gif)
 
 > ## Coder's Checklist
 > - Cards are to be shuffled on load or restart
