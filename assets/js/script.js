@@ -1,9 +1,9 @@
 // JavaScript Document
-var cards = document.querySelectorAll('.memory-card');
+const cards = document.querySelectorAll('.memory-card');
 
-var hasFlippedCard = false;
-var lockBoard = false;
-var firstCard, secondCard;
+let hasFlippedCard = false;
+let lockBoard = false;
+let firstCard, secondCard;
 
 function flipCard() {
   if (lockBoard) return;
@@ -24,7 +24,7 @@ function flipCard() {
 }
 
 function checkForMatch() {
-  var isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   isMatch ? disableCards() : unflipCards();
 }
 
