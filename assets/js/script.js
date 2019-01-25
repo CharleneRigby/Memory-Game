@@ -29,11 +29,9 @@ function checkForMatch() {
 }
 
 function disableCards() {
-  /*firstCard.removeEventListener('touchstart', flipCard);
-  secondCard.removeEventListener('touchstart', flipCard);*/
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
-  
+
   resetBoard();
 }
 
@@ -58,5 +56,4 @@ function resetBoard() {
   });
 })();
 
-/*cards.forEach(card => card.addEventListener('touchstart', flipCard));*/
 cards.forEach(card => card.addEventListener('click', flipCard));
