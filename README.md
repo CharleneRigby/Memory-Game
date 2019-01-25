@@ -9,3 +9,4 @@
 > ### Coder's Checklist
 > - Cards are to be shuffled on load or restart
 > - Game should know how to handle matched and unmatched cards
+> - Cards should lock when player has successfully matched cards
