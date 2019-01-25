@@ -1,9 +1,9 @@
 // JavaScript Document
-var cards = document.querySelectorAll('.memory-card');
+const cards = document.querySelectorAll('.memory-card');
 
-var hasFlippedCard = false;
-var lockBoard = false;
-var firstCard, secondCard;
+let hasFlippedCard = false;
+let lockBoard = false;
+let firstCard, secondCard;
 
 function flipCard() {
   if (lockBoard) return;
@@ -24,7 +24,7 @@ function flipCard() {
 }
 
 function checkForMatch() {
-  var isMatch = firstCard.dataset.name === secondCard.dataset.name;
+  let isMatch = firstCard.dataset.name === secondCard.dataset.name;
   isMatch ? disableCards() : unflipCards();
 }
 
@@ -49,12 +49,12 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
-function shuffle() {
+(function shuffle() {
   cards.forEach(card => {
-    var ramdomPos = Math.floor(Math.random() * 12);
+    let ramdomPos = Math.floor(Math.random() * 12);
     card.style.order = ramdomPos;
-  });
-}();
+    });
+  })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 cards.forEach(card => card.addEventListener('touchstart', flipCard));
